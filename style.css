@@ -1,36 +1,107 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body{
-    background: #6688AA;
+body {
+    background: #14281D;
+    color: azure;
+
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: #77AA88;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 24px;
     color: azure;
+    text-decoration: none;
     font-weight: 750;
 }
 
-.navbar{
-    font-size: 20px;
+.navbar a {
+    font-size: 15px;
     color: azure;
+    text-decoration: none; 
     font-weight: 550;
-    margin-left: 33px;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #90dff5;
+}
+
+.home {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700px;
+}
+
+.home-content h2 {
+    font-size: 40px;
+    font-weight: 550px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #22b2da;
+}
+
+.home-content p {
+    font-size: 16px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 354px;
+    height: 50px;
+}
+
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #22b2da;
+    border: 2px solid #22b2da;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #14281D;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;     
+}
+
+.btn-box a[href="#let's build"] ,
+.btn-box a[href="#let's talk"]{
+    background: transparent;
+    color: #22b2da;
 }
