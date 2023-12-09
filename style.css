@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+body{
+    background: #6688AA;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #77AA88;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 24px;
+    color: azure;
+    font-weight: 750;
+}
+
+.navbar{
+    font-size: 20px;
+    color: azure;
+    font-weight: 550;
+    margin-left: 33px;
+}
