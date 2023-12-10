@@ -6,8 +6,8 @@
 }
 
 body {
-    background: #14281D;
-    color: azure;
+    
+    color: rgb(253, 253, 253);
 
 }
 
@@ -47,9 +47,13 @@ body {
 
 .home {
     height: 800px;
+    background: url('football.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     padding: 0 10%;
+    
 }
 
 .home-content {
@@ -60,6 +64,7 @@ body {
 .home-content h1 {
     font-size: 56px;
     font-weight: 700px;
+    line-height: 1.2;
 }
 
 .home-content h2 {
@@ -75,6 +80,7 @@ body {
 
 .home-content p {
     font-size: 16px;
+    margin: 20px 0 40px;
 }
 
 .home-content .btn-box {
@@ -85,6 +91,7 @@ body {
 }
 
 .btn-box a {
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -97,11 +104,74 @@ body {
     color: #14281D;
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 1px;     
+    letter-spacing: 1px;   
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 .btn-box a[href="#let's build"] ,
-.btn-box a[href="#let's talk"]{
+.btn-box a[href="#let's talk"] {
     background: transparent;
     color: #22b2da;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #32724f;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-links {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 200px;
+}
+
+.home-links a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #22b2da;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #22b2da;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.home-links a::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #32724f;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.home-links a:hover::before { 
+    width: 100%;
 }
