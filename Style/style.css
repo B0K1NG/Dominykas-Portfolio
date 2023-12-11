@@ -3,12 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+
 }
 
 body {
-    
+    background-color: #434D1F;
     color: rgb(253, 253, 253);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 
 }
 
@@ -23,14 +26,18 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: #E0E0E0;
+    
+    
 }
 
 .logo {
-    position: relative;
+    position: static;
     font-size: 24px;
-    color: azure;
+    color: #6B9BAF;
     text-decoration: none;
     font-weight: 750;
+    position: relative;
 }
 
 .logo::before {
@@ -40,23 +47,27 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #49769F;
-    animation: showRight 1s ease forwards;
+    background: #E0E0E0;
+    animation: showRight 3s ease forwards;
     animation-delay: .4s;
+}
+
+.navbar {
+    position:static;
 }
 
 .navbar a {
     font-size: 15px;
-    color: azure;
+    color: #6B9BAF;
     text-decoration: none; 
     font-weight: 550;
     margin-left: 25px;
     transition: 0.3s;
+    
 }
 
-.navbar a:hover,
-.navbar a.active {
-    color: #023c4e;
+.navbar a:hover{
+    color: #A9A9C0;
 }
 
 .home {
@@ -151,17 +162,70 @@ body {
     width: 100%;
 }
 
-.home-links {
-    position: absolute;
-    bottom: 40px;
-    right: 20px;
-    width: 200px;
-    display: flex;
-    justify-content: space-around;
-    border-top: 200px;
+/*KEYFRAMES ANIMATION*/
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
 }
 
-.home-links a {
+@keyframes showLeft {
+    100% {
+        width: 0;
+    }
+}
+
+/*Projects SECTION*/
+
+.projects {
+    height: 800px;
+    background: #E0E0E0 no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    
+}
+.projects-content {
+    max-width: 350x;
+    margin-bottom: 300px;
+}
+
+.projects-content h1 {
+    
+    font-size: 56px;
+    font-weight: 700px;
+    line-height: 1.2;
+    color: #b0cfa6;
+}
+
+.projects-content p {
+    font-size: 17px;
+    margin: 10px 0px 40px;
+    color: #CFAF83;
+    font-weight: bold;
+    
+    
+}
+
+/*Footer*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #434D1F; /* or any color you prefer */
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-links a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -169,38 +233,28 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #023c4e;
+    border: 2px solid #6B9BAF;
     border-radius: 50%;
     font-size: 30px;
-    color: #023c4e;
+    color: #6B9BAF;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
     transition: 0.5s;
 }
 
-
-.home-links a::before {
+.footer-links a::before {
     content:'';
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: azure;
+    background: #A9A9C0;
     z-index: -1;
     transition: 0.5s;
 }
 
-
-
-.home-links a:hover::before { 
+.footer-links a:hover::before { 
     width: 100%;
-}
-
-/*KEYFRAMES ANIMATION*/
-@keyframes showRight {
-    100% {
-        width: 0;
-    }
 }
