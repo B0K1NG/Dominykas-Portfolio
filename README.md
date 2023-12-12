@@ -24,6 +24,7 @@ As I continue to learn and evolve, this portfolio will also grow. Expect new fea
 
 - HTML
 - CSS
+- Visual Studio Code
 
 ## Getting Started 🚀
 
@@ -31,6 +32,6 @@ Simply open the `index.html` file in your browser to explore the portfolio. Feel
 
 ## Connect With Me 🌐
 
-- [LinkedIn](https://www.linkedin.com/in/dominykas-pavlijus-138b41270/)
-- [GitHub](https://github.com/B0K1NG)
-- [Instagram](https://www.instagram.com/ig_dominykas/)
+- [LinkedIn](https://www.linkedin.com/in/dominykas-pavlijus-138b41270/).
+- [GitHub](https://github.com/B0K1NG).
+- [Instagram](https://www.instagram.com/ig_dominykas/).
