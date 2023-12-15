@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #434D1F;
+    background-color: #E0E0E0;
     color: rgb(253, 253, 253);
     overflow-x: hidden;
     overflow-y: scroll;
@@ -89,7 +89,7 @@ body {
 
 .home-content h1 {
     
-    font-size: 56px;
+    font-size: 54px;
     font-weight: 700px;
     line-height: 1.2;
 }
@@ -179,23 +179,25 @@ body {
 /* Work SECTION */
 
 .work {
-    height: 800px;
+    min-height:100vh;
     background: #E0E0E0 no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding: 0 10%;
+    position: relative;
+    
 }
 
 .work-content {
-    max-width: 800px; /* Adjusted max-width for better responsiveness */
-    margin-top: 25%; /* Adjusted margin-top for better positioning */
-    color: #CFAF83; /* Adjusted text color */
+    max-width: 800px; 
+    margin-bottom: 50%;
+    color: #CFAF83;
 }
 
 .work-content h1 {
-    font-size: 56px;
+    font-size: 54px;
     font-weight: 700;
     line-height: 1.2;
     color: #b0cfa6;
@@ -205,6 +207,12 @@ body {
     font-size: 17px;
     margin: 10px 0px 40px;
     font-weight: bold;
+}
+
+.work-content li {
+    font-size: 15px;
+    font-weight: 700;
+    list-style: none;
 }
 
 /* Skills SECTION */
@@ -220,17 +228,17 @@ body {
 }
 
 .skills-content {
-    max-width: 800px; /* Adjusted max-width for better responsiveness */
-    margin-top: 25%; /* Adjusted margin-top for better positioning */
-    color: #CFAF83; /* Adjusted text color */
+    max-width: 800px; 
+    
+    color: #CFAF83;
 }
 
 .skills-content h1 {
-    font-size: 56px;
+    font-size: 54px;
     font-weight: 700;
     line-height: 1.2;
     color: #b0cfa6;
-    margin-top: 28%; /* Adjusted margin-top for better positioning */
+    
 }
 
 .skills-content p {
@@ -238,13 +246,14 @@ body {
     margin: 10px 0px 40px;
     font-weight: bold;
 }
+
 /*Footer*/
 .footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #434D1F; /* or any color you prefer */
+    background-color: #434D1F; 
     padding: 10px;
     text-align: center;
 }
