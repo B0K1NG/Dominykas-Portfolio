@@ -178,9 +178,8 @@ body {
 }
 
 /* Work SECTION */
-
 .work {
-    min-height:100vh;
+    min-height: 100vh;
     background: #C7C7A6 no-repeat;
     background-size: cover;
     background-position: center;
@@ -189,14 +188,12 @@ body {
     padding: 0 10%;
     position: relative;
     justify-content: center;
-    
 }
 
 .work-content {
-    max-width: 800px; 
-    margin-bottom: 50%;
+    max-width: 800px;
     color: #2E282A;
-    text-align: center
+    text-align: center;
 }
 
 .work-content h1 {
@@ -206,6 +203,81 @@ body {
     color: #464F17;
 }
 
+.work-item {
+    gap: 20px;
+}
+
+.work-item .image-row {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.work-item img {
+    max-width: 80%;
+    height: auto;
+}
+
+#paintShopMain,
+#colorGuide,
+#footerPaintShop {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    animation: moveImagesGroup1 20s linear infinite;
+}
+
+#daviesBurgersMain,
+#daviesBurgersCalories {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    animation: moveImagesGroup2 20s linear infinite;
+}
+
+#auctionJava {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    animation: moveJava 20s linear infinite;
+}
+
+@keyframes moveImagesGroup1 {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    33.333% {
+        transform: translateX(-100%);
+    }
+    66.666% {
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes moveImagesGroup2 {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    33.333% {
+        transform: translateX(-100%);
+    }
+    66.666% {
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes moveJava {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    33.333% {
+        transform: translateX(-100%);
+    }
+    66.666% {
+        transform: translateX(-200%);
+    }
+}
+
 .work-item h2 {
     font-size: 30px;
     font-weight: 700;
@@ -213,9 +285,10 @@ body {
     letter-spacing: .1em;
 }
 
-.work-content p {
+.work-content p,
+.work-content li {
     font-size: 20px;
-    margin: 10px 0px 40px;
+    margin: 10px 0 40px;
     font-weight: bold;
 }
 
@@ -223,42 +296,6 @@ body {
     font-size: 15px;
     font-weight: 700;
     list-style: none;
-}
-
-#paintShopMain {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-#colorGuide {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-#footerPaintShop {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-#auctionJava {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-#daviesBurgersMain {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-#daviesBurgersCalories {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
 
 /* Skills SECTION */
