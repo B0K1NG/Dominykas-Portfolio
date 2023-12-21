@@ -2,17 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Verdana', 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
-
 }
 
 body {
-    background-color: #C7C7A6;
-    color: rgb(253, 253, 253);
-    overflow-x: hidden;
-    overflow-y: scroll;
+    background-color: #E9F1FA;
+    color: #fdfdfd;
+    overflow: auto;
+}
 
+.work,
+.skills {
+    overflow: auto;
 }
 
 .header {
@@ -26,15 +28,12 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-color: #C7C7A6;
-    
-    
+    background-color: #E9F1FA;
 }
 
 .logo {
-    position: static;
     font-size: 24px;
-    color: #586074;
+    color: #333333;
     text-decoration: none;
     font-weight: 750;
     position: relative;
@@ -47,72 +46,68 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #C7C7A6;
+    background: #E9F1FA;
     animation: showRight 3s ease forwards;
-    animation-delay: .4s;
+    animation-delay: 0.4s;
 }
 
 .navbar {
-    position:static;
+    position: static;
 }
 
 .navbar a {
     font-size: 15px;
-    color: #586074;
-    text-decoration: none; 
+    color: #333333;
+    text-decoration: none;
     font-weight: 550;
     margin-left: 25px;
     transition: 0.3s;
-    
 }
 
 .navbar a:hover,
-.navbar a.active{
-    color: #DCDEE5;
+.navbar a.active {
+    color: #7DA4C6;
 }
 
 .home {
-    height: 800px;
-    background: url('../Pictures/football.jpeg') no-repeat;
+    height: auto;
+    background: #E9F1FA no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding: 0 10%;
-    
+    margin-top: 70px;
 }
 
 .home-content {
-    max-width: 350x;
-    margin-bottom: 300px;
-    color: #464F17;
+    max-width: 600px;
+    margin-bottom: 110px;
+    color: #1F386E;
 }
 
 .home-content h1 {
-    
     font-size: 54px;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 1.2;
 }
 
 .home-content h2 {
     font-size: 40px;
-    font-weight: 550px;
+    font-weight: 550;
 }
 
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
-    color: #023c4e;
+    color: #1F386E;
 }
 
 .home-content p {
     font-size: 17px;
-    margin: 20px 0px 40px;
-    color: #023c4e;
+    margin: 20px 0 40px;
+    color: #333333;
     font-weight: bold;
-    
-    
 }
 
 .home-content .btn-box {
@@ -129,23 +124,23 @@ body {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #023c4e;
-    border: 2px solid #023c4e;
+    background: #007799;
+    border: 2px solid #007799;
     border-radius: 5px;
     font-size: 20px;
-    color: #14281D;
+    color: #333333;
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 1px;   
+    letter-spacing: 1px;
     z-index: 1;
     overflow: hidden;
     transition: 0.5s;
 }
 
-.btn-box a[href="contact.html"] ,
+.btn-box a[href="contact.html"],
 .btn-box a[href="https://github.com/B0K1NG"] {
     background: transparent;
-    color: 023c4e;
+    color: #023c4e;
 }
 
 .btn-box a::before {
@@ -155,7 +150,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: azure;
+    background: #005577;
     z-index: -1;
     transition: 0.5s;
 }
@@ -164,7 +159,23 @@ body {
     width: 100%;
 }
 
-/*KEYFRAMES ANIMATION*/
+.create-something,
+.meaningful-together {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-something {
+    margin-bottom: 10px;
+}
+
+.meaningful-together {
+    margin-top: 5px;
+}
+
+
+/* KEYFRAMES ANIMATION */
 @keyframes showRight {
     100% {
         width: 0;
@@ -177,10 +188,11 @@ body {
     }
 }
 
+
 /* Work SECTION */
 .work {
     min-height: 120vh;
-    background: #C7C7A6 no-repeat;
+    background: #E9F1FA no-repeat;
     background-size: contain;
     background-position: center;
     display: flex;
@@ -192,7 +204,7 @@ body {
 
 .work-content {
     max-width: 800px;
-    color: #2E282A;
+    color: #333333;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -201,7 +213,7 @@ body {
     font-size: 54px;
     font-weight: 700;
     line-height: 1.2;
-    color: #464F17;
+    color: #1F386E;
 }
 
 .work-item {
@@ -330,6 +342,7 @@ body {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: .1em;
+    color: #1F386E;
 }
 
 .work-content p,
@@ -424,7 +437,7 @@ body {
 
 .skills {
     height: auto;
-    background: #C7C7A6 no-repeat;
+    background: #E9F1FA no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -436,7 +449,7 @@ body {
 .skills-content {
     max-width: 800px;
     margin: 0 auto;
-    color: #2E282A;
+    color: #333333;
     text-align: center;
 }
 
@@ -444,7 +457,7 @@ body {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
-    color: #464F17;
+    color: #1F386E;
     margin-top: 70px;
 }
 
@@ -507,7 +520,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #464F17; 
+    background-color: #007799; 
     padding: 10px;
     text-align: center;
 }
@@ -525,10 +538,10 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #586074;
+    border: 2px solid #CCCCCC;
     border-radius: 50%;
     font-size: 30px;
-    color: #586074;
+    color: #CCCCCC;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
@@ -542,7 +555,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #DCDEE5;
+    background: #005577;
     z-index: -1;
     transition: 0.5s;
 }
