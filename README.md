@@ -6,6 +6,8 @@ Welcome to my personal portfolio project! 🌐
 
 Drawing from my expertise in CSS, HTML, and JavaScript, I've meticulously crafted this platform to exhibit my proficiency, projects, and journey as a Frontend Developer. This portfolio serves as a dynamic canvas where creativity harmonizes with functionality, with each project encapsulating a chapter in my coding odyssey.
 
+- [CS-2 Home-page](https://ibb.co/8rMk7JM)
+
 ## Features ✨
 
 - **Introduction Section:** Offering insights into my identity and my role as a Frontend Developer, delving into my coding ethos.
