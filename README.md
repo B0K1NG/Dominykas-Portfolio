@@ -24,7 +24,6 @@ As I continue to learn and evolve, this portfolio will also grow. Expect new fea
 
 ## Tech Stack 💻
 
-- Visual Studio Code
 - HTML
 - CSS
 - JavaScript
