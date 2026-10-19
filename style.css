@@ -789,3 +789,25 @@ h2 {
     transition: none !important;
   }
 }
+
+/* Editorial project cover, consistent with the selected work grid. */
+.visual-marksign {
+  background: #d4dbcf;
+  color: #293d30;
+}
+.marksign-brand {
+  font-size: clamp(42px, 6vw, 66px);
+  letter-spacing: -3px;
+}
+.marksign-brand > span {
+  color: #587349;
+}
+.marksign-symbol {
+  position: absolute;
+  top: 18px;
+  right: 28px;
+  font-size: 180px;
+  line-height: 1;
+  color: #293d3010;
+  transform: rotate(-12deg);
+}

@@ -23,10 +23,11 @@ This portfolio brings together selected commercial projects, design work, and a 
 | --- | --- |
 | [VRK](https://www.vrk.lt/) | UI design & front-end development |
 | [Orion](https://www.orion.lt/) | UI design & front-end development |
-| [MESO Group](https://meso.lt/) | UI design & front-end development |
+| [MESO Group](https://mesoaccounting.lt/) | UI design & front-end development |
 | [Devoro](https://www.devoro.com/) | UI design & front-end development |
 | [Black Banx](https://www.blackbanx.com/) | UI design & front-end development |
 | [FK Ekranas](https://dribbble.com/shots/27821555-FK-Ekranas-design) | Website UI design |
+| [Marksign](https://marksign.eu/) | UI design & front-end development |
 
 Find more of my design work on [Dribbble](https://dribbble.com/B0K1NG).
 
