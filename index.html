@@ -1,408 +1,398 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="../favicon/Logo.png" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mediaqueries.css">
-  <title>Dominykas Portfolio</title>
-</head>
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">Dominykas Pavlijus</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Dominykas Pavlijus</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container about-pic" >
-      <img src="./assets/images/profile-pic.png" alt="Dominykas Pavlijus profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Dominykas Pavlijus</h1>
-      <p class="section__text__p2">Front-End and UI/UX Developer</p>
-      <div class="btn-container">
-        <button
-          class="btn btn-color-2"
-          onclick="window.open('./assets/dominykas-pavlijus.pdf')"
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#141614" />
+    <meta
+      name="description"
+      content="Dominykas Pavlijus — Front-End Engineer and UI Designer based in Lithuania. Selected work across public services, finance and digital experiences."
+    />
+    <meta
+      property="og:title"
+      content="Dominykas Pavlijus — Design & Front-End"
+    />
+    <meta
+      property="og:description"
+      content="Thoughtful interfaces. Carefully built. Explore selected design and front-end work."
+    />
+    <meta property="og:type" content="website" />
+    <title>Dominykas Pavlijus — Design & Front-End</title>
+    <link rel="icon" href="./favicon/Logo.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#home" aria-label="Dominykas Pavlijus, home"
+        >dp<span>.</span></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        Menu <span aria-hidden="true">＋</span>
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#work">Selected work</a><a href="#about">About</a
+        ><a href="#contact" class="nav-contact"
+          >Let’s talk <span aria-hidden="true">↗</span></a
         >
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img
-          src="./assets/gifs/linkedin.gif"
-          alt="My LinkedIn profile"
-          class="icon"
-          onclick="location.href='https://www.linkedin.com/in/dominykas-pavlijus-138b41270/'"
-        />
-        <img
-          src="./assets/gifs/github.gif"
-          alt="My Github profile"
-          class="icon"
-          onclick="location.href='https://github.com/B0K1NG'"
-        />
-         <img
-          src="./assets/gifs/figma.gif"
-          alt="My Figma projects"
-          class="icon"
-          onclick="location.href='https://dribbble.com/B0K1NG'"
-        />
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img
-          src="./assets/images/about-pic.jpg"
-          alt="Profile picture"
-          class="about-pic"
-        />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img
-              src="./assets/images/experience.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <h3>Experience</h3>
-            <p>1+ years <br />Full-Stack Development</p>
-            <p>2+ years <br />Front-End Development</p>
-            <p>2+ years <br />UI/UX Development</p>
-          </div>
-          <div class="details-container">
-            <img
-              src="./assets/images/education.png"
-              alt="Education icon"
-              class="icon"
-            />
-            <h3>Education</h3>
-            <p>B.Sc. Information Systems Engineering<br />Red Diploma</p>
-            <br>
-            <p>B.Sc. Multimedia and Computer Design
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            I’m a Front-End Developer with over two years of experience in full-stack work, now focused on modern front-end
-            development. My background in UI/UX equips me to build interfaces that are not only functional but intuitive
-            and user-friendly.
-            
-            My passion lies in web development — I continuously challenge myself through hands-on projects, freelance work,
-            and lifelong learning. I enjoy solving problems, refining user experiences, and staying current with emerging
-            technologies.
-
-            I gained a bachelor's degree in Multimedia and Computer design at VGTU (Vilnius Gediminas Technical University)
-            and Information System Engineering at VIKO (Vilniaus College).
-            Alongside my studies, I balance my life with football, fitness, and self-improvement. I thrive in
-            collaborative environments, value clear communication, and am dedicated to continuous
-            growth—professionally and personally.
+      </nav>
+    </header>
+    <main id="main">
+      <section id="home" class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-top">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> DOMINYKAS
+            PAVLIJUS
+          </p>
+          <p class="eyebrow hero-location">
+            BASED IN LITHUANIA / WORKING ON THE WEB
           </p>
         </div>
-      </div>
-    </div>
-    <img
-      src="./assets/images/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#experience'"
-    />
-  </section>
-
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Full-Stack Development</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/gifs/django.gif"
-                alt="Experience icon"
-                class="HTML icon"
-              />
-              <div>
-                <h3>Flask /<br> Django</h3>
-                <p>Advanced</p>
+        <h1 id="hero-title">
+          A designer’s eye.<br />A developer’s <span class="serif">mind.</span>
+        </h1>
+        <div class="hero-bottom">
+          <div class="hero-intro">
+            <p class="role">Front-End Engineer & UI Designer</p>
+            <p>
+              I turn ideas into thoughtful interfaces and build them for the
+              real world. From the first layout to the final interaction.
+            </p>
+            <a class="button button-light" href="#work"
+              >Explore selected work <span aria-hidden="true">↘</span></a
+            >
+          </div>
+          <div class="interface-art" aria-hidden="true">
+            <div class="art-label">DESIGN ↔ DEVELOPMENT</div>
+            <div class="art-window">
+              <div class="art-toolbar">
+                <i></i><i></i><i></i><span>interface.tsx</span>
               </div>
-            </article>
-            <article>
-              <img
-                src="./assets/gifs/figma.gif"
-                alt="Experience icon"
-                class="CSS icon"
-              />
-              <div>
-                <h3>UI/UX</h3>
-                <p>Advanced</p>
+              <div class="art-content">
+                <div class="art-sidebar"><b></b><b></b><b></b></div>
+                <div class="art-canvas">
+                  <div class="art-kicker"></div>
+                  <div class="art-heading"></div>
+                  <div class="art-heading short"></div>
+                  <div class="art-line"></div>
+                  <div class="art-line short"></div>
+                  <div class="art-btn"></div>
+                </div>
+                <div class="art-orbit"></div>
               </div>
-            </article>
-            <article>
-              <img
-                src="./assets/gifs/reactjs.gif"
-                alt="Experienced icon"
-                class="ReactJS icon"
-              />
-              <div>
-                <h3>ReactJS</h3>
-                <p>Advanced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/gifs/sass.gif"
-                alt="Experience icon"
-                class="Sass icon"
-              />
-              <div>
-                <h3>Sass</h3>
-                <p>Advanced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/images/drupal-icon.png"
-                alt="Experience icon"
-                class="Drupal icon"
-              />
-              <div>
-                <h3>Drupal</h3>
-                <p>Advanced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/gifs/bootstrap.gif"
-                alt="Experience icon"
-                class="Bootstrap icon"
-              />
-              <div>
-                <h3>Bootstrap</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
+            </div>
+            <span class="art-coordinate coordinate-one">01 / INTENT</span
+            ><span class="art-coordinate coordinate-two">02 / EXECUTION</span>
           </div>
         </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Recent Experience</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/gifs/checkmark.gif"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Front-End Developer</h3>
-                <p>Present</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/gifs/checkmark.gif"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Full-Stack Developer</h3>
-                <p>1 Year 1 Month</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/gifs/checkmark.gif"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Front-End Developer Freelance</h3>
-                <p>Present</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/gifs/checkmark.gif"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Graphic Design Intern</h3>
-                <p>2 Months</p>
-              </div>
-            </article>
-          </div>
+        <div class="hero-foot">
+          <span>DESIGN WITH PURPOSE. BUILD WITH CARE.</span
+          ><a href="#work"
+            >SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a
+          >
         </div>
-      </div>
-    </div>
-    <img
-      src="./assets/images/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#projects'"
-    />
-  </section>
-
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/images/project-1.png"
-              alt="Project 1"
-              class="project-img"
-            />
+      </section>
+      <section id="work" class="work-section wrap" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / SELECTED WORK</p>
+            <h2 id="work-title">
+              From concept<br />to <span class="serif">browser.</span>
+            </h2>
           </div>
-          <h2 class="experience-sub-title project-title"> ArnasZara
+          <p>
+            A selection of projects where I contributed to the visual design and
+            front-end implementation.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project">
+            <a
+              class="project-visual visual-vrk"
+              href="https://www.vrk.lt/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit VRK website (opens in a new tab)"
+              ><span class="visual-category">PUBLIC SECTOR</span
+              ><span class="project-brand vrk-brand"
+                >VRK<span class="brand-rule"></span></span
+              ><span class="visual-caption"
+                >Clarity. Accessibility. Public information.</span
+              ><span class="visual-arrow" aria-hidden="true">↗</span></a
+            >
+            <div class="project-info">
+              <div>
+                <h3>VRK</h3>
+                <p>UI design & front-end development</p>
+              </div>
+              <span class="project-number">01</span>
+            </div>
+          </article>
+          <article class="project">
+            <a
+              class="project-visual visual-orion"
+              href="https://www.orion.lt/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Orion website (opens in a new tab)"
+              ><span class="visual-category">FINANCIAL SERVICES</span
+              ><span class="orion-orbit" aria-hidden="true"></span
+              ><span class="project-brand orion-brand">orion<span>↗</span></span
+              ><span class="visual-caption">A considered digital presence.</span
+              ><span class="visual-arrow" aria-hidden="true">↗</span></a
+            >
+            <div class="project-info">
+              <div>
+                <h3>Orion</h3>
+                <p>UI design & front-end development</p>
+              </div>
+              <span class="project-number">02</span>
+            </div>
+          </article>
+          <article class="project">
+            <a
+              class="project-visual visual-meso"
+              href="https://meso.lt/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit MESO website (opens in a new tab)"
+              ><span class="visual-category">ACCOUNTING & LEGAL</span
+              ><span class="meso-lines" aria-hidden="true"></span
+              ><span class="project-brand meso-brand"
+                >MESO<span>GROUP</span></span
+              ><span class="visual-caption">Structure meets simplicity.</span
+              ><span class="visual-arrow" aria-hidden="true">↗</span></a
+            >
+            <div class="project-info">
+              <div>
+                <h3>MESO Group</h3>
+                <p>UI design & front-end development</p>
+              </div>
+              <span class="project-number">03</span>
+            </div>
+          </article>
+          <article class="project">
+            <a
+              class="project-visual visual-devoro"
+              href="https://www.devoro.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Devoro website (opens in a new tab)"
+              ><span class="visual-category">TECHNOLOGY</span
+              ><span class="devoro-grid" aria-hidden="true"></span
+              ><span class="project-brand devoro-brand"
+                >devoro<span>_</span></span
+              ><span class="visual-caption">Technology, made approachable.</span
+              ><span class="visual-arrow" aria-hidden="true">↗</span></a
+            >
+            <div class="project-info">
+              <div>
+                <h3>Devoro</h3>
+                <p>UI design & front-end development</p>
+              </div>
+              <span class="project-number">04</span>
+            </div>
+          </article>
+          <article class="project">
+            <a
+              class="project-visual visual-blackbanx"
+              href="https://www.blackbanx.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Black Banx website (opens in a new tab)"
+              ><span class="visual-category">DIGITAL BANKING</span
+              ><span class="bank-card" aria-hidden="true"
+                ><span>BB</span><i></i></span
+              ><span class="project-brand blackbanx-brand">BLACK<br />BANX</span
+              ><span class="visual-caption"
+                >Digital experiences in finance.</span
+              ><span class="visual-arrow" aria-hidden="true">↗</span></a
+            >
+            <div class="project-info">
+              <div>
+                <h3>Black Banx</h3>
+                <p>UI design & front-end development</p>
+              </div>
+              <span class="project-number">05</span>
+            </div>
+          </article>
+          <article class="project">
+            <a
+              class="project-visual visual-ekranas"
+              href="https://dribbble.com/shots/27821555-FK-Ekranas-design"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View FK Ekranas design on Dribbble (opens in a new tab)"
+              ><span class="visual-category">SPORT / WEBSITE DESIGN</span
+              ><span class="pitch-lines" aria-hidden="true"></span
+              ><span class="project-brand ekranas-brand"
+                >FK<br />EKRANAS<span>↗</span></span
+              ><span class="visual-caption"
+                >A club. A community. A new perspective.</span
+              ><span class="visual-arrow" aria-hidden="true">↗</span></a
+            >
+            <div class="project-info">
+              <div>
+                <h3>FK Ekranas</h3>
+                <p>UI design · View on Dribbble</p>
+              </div>
+              <span class="project-number">06</span>
+            </div>
+          </article>
+        </div>
+        <div class="work-footer">
+          <p>
+            Project covers are editorial graphics. Follow each link to explore
+            the work.
+          </p>
+          <a
+            class="text-link"
+            href="https://dribbble.com/B0K1NG"
+            target="_blank"
+            rel="noopener noreferrer"
+            >More design on Dribbble <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section
+        id="about"
+        class="about-section wrap"
+        aria-labelledby="about-title"
+      >
+        <p class="eyebrow">02 / THE PERSON BEHIND THE PIXELS</p>
+        <div class="about-layout">
+          <h2 id="about-title">
+            Thoughtful design.<br />Solid
+            <span class="serif">foundations.</span>
           </h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/B0K1NG/ArnasZara'"
+          <div class="about-copy">
+            <p class="large-copy">
+              I’m Dominykas, a front-end engineer with a background in UI
+              design. I care as much about how an interface works as how it
+              looks.
+            </p>
+            <p>
+              My work connects visual design with practical implementation:
+              responsive layouts, reusable components and accessible
+              interactions. I enjoy taking a design through the details that
+              make it work in a browser.
+            </p>
+            <a
+              class="text-link"
+              href="https://www.linkedin.com/in/dominykas-pavlijus-138b41270/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Connect on LinkedIn <span aria-hidden="true">↗</span></a
             >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://arnaszara.netlify.app/?fbclid=IwAR1WpRbQGztNMuTxYbV2M60af_AmKGlFNrhWk--4YTUObiBshKEoyRp9QPg'"
-            >
-              Live Demo
-            </button>
           </div>
         </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/images/project-2.png"
-              alt="Project 2"
-              class="project-img"
-            />
+        <div class="expertise-grid">
+          <div class="expertise">
+            <span class="eyebrow">CURRENTLY</span>
+            <h3>Front-End Engineer</h3>
+            <p>Baltic Amadeus</p>
+            <span class="subtle">Design thinking. Front-end delivery.</span>
           </div>
-          <h2 class="experience-sub-title project-title">ReizMaze</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/B0K1NG/ReizMaze'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://reizmaze.netlify.app/'"
-            >
-              Live Demo
-            </button>
+          <div class="expertise">
+            <span class="eyebrow">BUILD</span>
+            <h3>The development side</h3>
+            <ul class="tags">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>Drupal</li>
+              <li>Twig</li>
+              <li>Sass</li>
+            </ul>
           </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/images/project-3.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Monteina Management System</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/B0K1NG/Monteina-Management'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://monteina.netlify.app/'"
-            >
-              Live Demo
-            </button>
+          <div class="expertise">
+            <span class="eyebrow">CRAFT</span>
+            <h3>The interface side</h3>
+            <ul class="tags">
+              <li>UI design</li>
+              <li>Figma</li>
+              <li>Responsive design</li>
+              <li>Accessibility</li>
+              <li>Design systems</li>
+            </ul>
           </div>
         </div>
+      </section>
+      <section class="personal-section wrap" aria-labelledby="personal-title">
+        <div class="personal-photo">
+          <img
+            src="./assets/images/about-pic.jpg"
+            alt="Dominykas on the football pitch, wearing a blue and yellow kit"
+            width="1125"
+            height="750"
+            loading="lazy"
+          />
+        </div>
+        <div class="personal-copy">
+          <p class="eyebrow">03 / BEYOND THE SCREEN</p>
+          <h2 id="personal-title">
+            Different field.<br />Same <span class="serif">commitment.</span>
+          </h2>
+          <p>
+            When I’m away from the keyboard, you’ll often find me on a football
+            pitch. Football brings a different kind of problem-solving: staying
+            focused, adapting quickly and working as a team.
+          </p>
+          <a
+            class="text-link"
+            href="https://www.sofascore.com/football/player/dominykas-pavlijus/2718309"
+            target="_blank"
+            rel="noopener noreferrer"
+            >My football profile <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="contact-section wrap"
+        aria-labelledby="contact-title"
+      >
+        <p class="eyebrow">04 / HAVE SOMETHING IN MIND?</p>
+        <h2 id="contact-title">
+          Let’s build<br />something <span class="serif">good.</span
+          ><span class="contact-star" aria-hidden="true">↗</span>
+        </h2>
+        <div class="contact-bottom">
+          <a class="email-link" href="mailto:dominykaspavlijus@gmail.com"
+            >dominykaspavlijus@gmail.com <span aria-hidden="true">↗</span></a
+          >
+          <p>For a project, a collaboration<br />or a conversation.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <p>© <span id="year">2026</span> Dominykas Pavlijus</p>
+      <div>
+        <a
+          href="https://github.com/B0K1NG"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub ↗</a
+        ><a
+          href="https://dribbble.com/B0K1NG"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Dribbble ↗</a
+        ><a
+          href="https://www.linkedin.com/in/dominykas-pavlijus-138b41270/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn ↗</a
+        >
       </div>
-    </div>
-    <img
-      src="./assets/images/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-    />
-  </section>
-
-</section>
-<section id="contact">
-  <p class="section__text__p1">Get in Touch</p>
-  <h1 class="title">Contact Me</h1>
-  <div class="contact-info-upper-container">
-    <div class="contact-info-container">
-      <img
-        src="./assets/gifs/email.gif"
-        alt="Email icon"
-        class="icon contact-icon email-icon"
-      />
-      <p><a href="mailto:dominykaspavlijus@gmail.com">Email</a></p>
-    </div>
-    <div class="contact-info-container">
-      <img
-        src="./assets/gifs/linkedin.gif"
-        alt="LinkedIn icon"
-        class="icon contact-icon"
-      />
-      <p><a href="https://www.linkedin.com/in/dominykas-pavlijus-138b41270/">LinkedIn</a></p>
-    </div>
-  </div>
-</section>
-<footer>
-  <nav>
-    <div class="nav-links-container">
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <p>Copyright &#169; 2024 Dominykas Pavlijus. All Rights Reserved.</p>
-</footer>
-<script src="script.js"></script>
-</body>
+      <a href="#home">Back to top ↑</a>
+    </footer>
+  </body>
 </html>
-
-
-

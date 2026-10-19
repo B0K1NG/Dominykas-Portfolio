@@ -1,41 +1,26 @@
-# Dominykas Portfolio 🚀
+# Dominykas Pavlijus — Portfolio
 
-Welcome to my personal portfolio project! 🌐
+Personal portfolio for front-end engineering and UI design. Built with semantic HTML, CSS and vanilla JavaScript. No build step or package dependencies.
 
-## Overview 📝
+## Preview locally
 
-Drawing from my expertise in CSS, HTML, and JavaScript, I've meticulously crafted this platform to exhibit my proficiency, projects, and journey as a Frontend Developer. This portfolio serves as a dynamic canvas where creativity harmonizes with functionality, with each project encapsulating a chapter in my coding odyssey.
+Run `python3 -m http.server 8000` from the repository and open http://localhost:8000.
 
-- [Portfolio](https://ibb.co/8rMk7JM)
+## Content
 
-## Features ✨
+Selected projects: VRK, Orion, MESO Group, Devoro, Black Banx and FK Ekranas. Project covers are editorial graphics, not screenshots of the websites. The first five projects credit UI design and front-end contributions; FK Ekranas credits UI design.
 
-- **Introduction Section:** Offering insights into my identity and my role as a Frontend Developer, delving into my coding ethos.
-  
-- **Projects Gallery:** Showcasing my repertoire, each project narrates a distinctive narrative of problem-solving, design, and innovation.
+Styles are in `style.css` and `mediaqueries.css`. `script.js` handles the accessible mobile navigation and footer year. Google Fonts is optional: system fallback fonts are included. Existing assets and CV remain in `assets/`.
 
-- **Seamless Navigation:** Effortless exploration facilitated, ensuring a fluid user experience.
+## Restore the pre-refresh version
 
-- **Contact Links:** Establish easy connections through LinkedIn, GitHub, and Email via the footer links.
+The complete version before the October 19, 2026 refresh is preserved on GitHub in branch `backup/pre-refresh-2026-10-19`, at commit `492d93fd7dc916996614c6775626fdd47f558310`.
 
-## Under Construction 🚧
+To restore its tracked files without rewriting history, from a clean checkout of `main`:
 
-As I continue to learn and evolve, this portfolio will also grow. Expect new features, projects, and improvements. The journey is ongoing!
-
-## Tech Stack 💻
-
-- HTML
-- CSS
-- JavaScript
-- Replit
-- Visual Studio Code
-
-## Contribution Guidelines 🤝
-
-You're invited to contribute by refining the website, enhancing code structure, or introducing new features. If you encounter any issues, please submit a pull request or create an issue.
-
-## Connect With Me 🌐
-
-- [LinkedIn](https://www.linkedin.com/in/dominykas-pavlijus-138b41270/).
-- [GitHub](https://github.com/B0K1NG).
-- [Instagram](https://www.instagram.com/ig_dominykas/).
+```sh
+git fetch origin
+git restore --source=origin/backup/pre-refresh-2026-10-19 --staged --worktree .
+git commit -m "Restore portfolio before October 2026 refresh"
+git push origin main
+```

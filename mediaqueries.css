@@ -1,106 +1,285 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+@media (min-width: 1600px) {
+  .hero {
+    padding-top: 55px;
   }
-  .about-containers {
-    flex-wrap: wrap;
+  h1 {
+    font-size: 108px;
   }
-  #contact,
-  #projects {
-    height: fit-content;
+  .hero-bottom {
+    margin-top: 50px;
+  }
+  .interface-art {
+    width: 470px;
+    height: 260px;
   }
 }
-
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
+@media (max-width: 1000px) {
+  .wrap {
+    width: calc(100% - 64px);
   }
-  #hamburger-nav {
+  h1 {
+    letter-spacing: -3px;
+  }
+  .interface-art {
+    width: 340px;
+    height: 220px;
+  }
+  .art-window {
+    right: 20px;
+  }
+  .art-orbit {
+    width: 80px;
+    height: 80px;
+    right: 14px;
+    top: 35px;
+  }
+  .art-canvas {
+    padding: 20px 12px;
+  }
+  .art-heading {
+    width: 115px;
+  }
+  .hero-bottom {
+    gap: 30px;
+  }
+  .about-layout,
+  .personal-section {
+    gap: 40px;
+  }
+  .project-visual {
+    height: 270px;
+  }
+  .bank-card {
+    right: 20px;
+    width: 155px;
+  }
+  .blackbanx-brand {
+    margin-right: 110px;
+  }
+  .expertise {
+    padding-inline: 18px;
+  }
+  .personal-copy h2 {
+    font-size: 36px;
+  }
+  .hero-location {
+    font-size: 8px;
+  }
+  .contact-star {
+    font-size: 85px;
+  }
+}
+@media (max-width: 700px) {
+  .wrap {
+    width: calc(100% - 40px);
+  }
+  .site-header {
+    height: 82px;
+    position: relative;
+  }
+  .wordmark {
+    font-size: 34px;
+  }
+  .menu-toggle {
     display: flex;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--text);
+    padding: 10px 14px;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
+  .menu-toggle span {
+    font-size: 17px;
   }
-  #profile,
-  .section-container {
-    display: block;
+  nav {
+    display: none;
+    position: absolute;
+    top: 81px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background: #1d211b;
+    border: 1px solid var(--line);
+    padding: 24px;
+    align-items: stretch;
+    gap: 24px;
   }
-  .arrow {
+  nav.is-open {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-contact {
+    justify-content: space-between;
+  }
+  .hero {
+    padding-top: 30px;
+  }
+  .hero-location {
     display: none;
   }
-  section,
-  .section-container {
-    height: fit-content;
+  h1 {
+    font-size: clamp(42px, 9.4vw, 65px);
+    letter-spacing: -2.4px;
+    margin-top: 36px;
   }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 200px;
-    height: 250px;
-    margin: 1 auto 1rem;
-  }
-  .about-pic {
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers, 
-  .contact-info-upper-container, 
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  } 
-  .nav-links {
+  .hero-bottom {
     flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+    align-items: flex-start;
+    margin-top: 28px;
+    gap: 35px;
   }
-  .section-pic-container {
-    width: auto;
-    height: 46vh;
-    justify-content: center;
+  .hero-intro {
+    max-width: 100%;
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
+  .hero-intro > p:not(.role) {
+    max-width: 380px;
   }
-  .title {
-    font-size: 2rem;
+  .role {
+    font-size: 14px;
   }
-  .text-container {
-    text-align: justify;
+  .interface-art {
+    width: min(100%, 400px);
+    align-self: center;
+    height: 210px;
+  }
+  .hero-foot {
+    margin-top: 35px;
+    font-size: 8px;
+    gap: 15px;
+    line-height: 1.6;
+  }
+  .hero-foot > span {
+    max-width: 160px;
+  }
+  .work-section {
+    padding-top: 65px;
+  }
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 28px;
+  }
+  .section-heading > p {
+    max-width: 350px;
+  }
+  h2 {
+    font-size: 40px;
+    letter-spacing: -1.8px;
+  }
+  .section-heading .eyebrow {
+    margin-bottom: 16px;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .project-visual {
+    height: 300px;
+  }
+  .project-info {
+    padding-top: 13px;
+  }
+  .work-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .about-section {
+    padding-top: 75px;
+  }
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .about-copy .large-copy {
+    font-size: 18px;
+  }
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+  .expertise,
+  .expertise:first-child {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 25px 0;
+  }
+  .expertise:last-child {
+    border-bottom: 0;
+  }
+  .personal-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 65px;
+  }
+  .personal-photo img {
+    aspect-ratio: 1.4;
+  }
+  .personal-copy h2 {
+    font-size: 40px;
+  }
+  .personal-copy .eyebrow {
+    margin-bottom: 18px;
+  }
+  .contact-section {
+    margin-top: 70px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .contact-section h2 {
+    font-size: clamp(48px, 10.7vw, 72px);
+    letter-spacing: -2px;
+  }
+  .contact-star {
+    position: static;
+    font-size: 42px;
+    display: inline-block;
+    margin-left: 15px;
+  }
+  .contact-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 28px;
+  }
+  .email-link {
+    font-size: clamp(13px, 3.6vw, 20px);
+  }
+  .email-link span {
+    margin-left: 8px;
+  }
+  .site-footer {
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 10px;
+  }
+  .site-footer > div {
+    order: 3;
+    width: 100%;
+  }
+  .site-footer > a {
+    margin-left: auto;
+  }
+  .visual-category {
+    top: 22px;
+    left: 22px;
+  }
+  .visual-caption {
+    left: 22px;
+    font-size: 9px;
+  }
+  .bank-card {
+    right: 35px;
+    top: 105px;
+    width: 160px;
+  }
+  .blackbanx-brand {
+    font-size: 40px;
+    margin-right: 130px;
   }
 }
